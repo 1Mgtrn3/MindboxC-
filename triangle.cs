@@ -27,8 +27,8 @@ namespace RightTriangleLib
 
         public double GetArea(){
             
-                var p = (FirstSide + SecondSide + ThirdSide) * 0.5; 
-                return Math.Sqrt(p * (p - FirstSide) * (p - SecondSide) * (p - ThirdSide));
+                var p = (FirstSide + SecondSide + ThirdSide) * 0.5; //по теореме Герона сначала считаем периметр
+                return Math.Sqrt(p * (p - FirstSide) * (p - SecondSide) * (p - ThirdSide)); //а затем площадь
             
         }
 
